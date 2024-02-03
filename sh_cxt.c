@@ -13,7 +13,7 @@ void init_sh_ctx(sh_context *sh_ctx, char **argv)
 
 	if (sh_ctx->current_cmd)
 	{
-		sh_ctx->cmd_args = split_str(sh_ctx->current_cmd, " \t");
+		sh_ctx->cmd_args = _strtok(sh_ctx->current_cmd, " \t");
 		if (!sh_ctx->cmd_args)
 		{
 			sh_ctx->cmd_args = malloc(2 * sizeof(char *));
