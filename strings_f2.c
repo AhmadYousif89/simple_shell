@@ -57,12 +57,12 @@ int count_words(char *str, char *delim)
 }
 
 /**
- * split_str - Splits a string into words
+ * _strtok - Splits a string into words
  * @str: the input string
  * @d: the delimeter string
  * Return: a pointer to an array of strings, or NULL on failure
  */
-char **split_str(char *str, char *d)
+char **_strtok(char *str, char *d)
 {
 	int i = 0, idx = 0, word_len, words_count;
 	char **words;

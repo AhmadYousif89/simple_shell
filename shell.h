@@ -115,7 +115,7 @@ char *_strdup(const char *str);
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);
 char *_strcat(char *dest, char *src);
-char **split_str(char *s, char *d);
+char **_strtok(char *s, char *d);
 char *_strstr(const char *h, const char *n);
 int rplc_str(char **old, char *new);
 int is_delimiter(char c, char *d);
